@@ -16,4 +16,11 @@ public class Operation {
 		return 3;
 	}
 	
+	public void validate(int age) throws Exception {
+		if (age<18)
+			throw new ArithmeticException("not a valid age..");
+		else
+			System.out.println("Thanks for the vote");
+	}
+	
 }
